@@ -9,10 +9,14 @@
 启动密码：防止他人非法开启软件。
 
 自定义找回：支持安全问题找回，兼顾安全性与容错性。
+<img width="618" height="468" alt="image" src="https://github.com/user-attachments/assets/c9bbac57-f5e5-4131-ae54-1d0e997e925d" />
 
 🚀 多协议支持：预设 OpenAI、Anthropic、Gemini、DeepSeek、硅基流动等主流平台，支持自定义 Base URL。
 
+<img width="2688" height="1533" alt="image" src="https://github.com/user-attachments/assets/28100de2-e8de-4c1b-bff3-15b4a9a8d449" />
+
 🛠️ 自动化模型抓取：一键获取供应商最新模型列表，支持模型名称置顶、搜索过滤及手动增删。
+
 
 📋 快捷分发：支持一键复制 API Key 或代码段，大幅提升开发效率。
 
