@@ -70,7 +70,7 @@ class ScrollableFrame(ttk.Frame):
 class AIKeyManager:
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title("A小鱼 AIKey Vault v9.3")
+        self.root.title("小鱼 AIKey Vault v9.3")
         self.root.geometry("1820x1020")
         self.root.configure(bg=GeminiBlueTheme.BG_MAIN)
 
@@ -407,7 +407,7 @@ class AIKeyManager:
 
         ttk.Label(form_f, text="供应商", style="Side.TLabel").pack(anchor="w", pady=(5, 2))
         self.prov_cb = ttk.Combobox(form_f, textvariable=self.provider_var,
-                                    values=list(self.presets.keys()) + ["自定义"], state="readonly")
+                                    values=list(self.presets.keys()) + ["自定义"], state="normal")
         self.prov_cb.pack(fill="x", pady=(0, 8), ipady=3)
         self.prov_cb.bind("<<ComboboxSelected>>", self.on_preset_selected)
 
@@ -882,6 +882,7 @@ class AIKeyManager:
             # 更新模型列表
             self.update_model_list(preset["models"], pre_selected=preset["models"])
         elif name == "自定义":
+            # 当选择"自定义"时，清空base_url但保留用户输入的名称
             self.base_url_var.set("")
             self.update_model_list([])
     
